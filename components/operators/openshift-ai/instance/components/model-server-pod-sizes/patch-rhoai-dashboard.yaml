@@ -12,7 +12,7 @@ spec:
         requests:
           cpu: '1'
           memory: 4Gi
-    - name: Small_Medium
+    - name: Small-Medium
       resources:
         limits:
           cpu: '4'

@@ -7,7 +7,7 @@ metadata:
     opendatahub.io/dashboard: 'true'
   annotations:
     opendatahub.io/connection-type: s3
-    openshift.io/display-name: minio-data-connection
+    openshift.io/display-name: minio-data-connection-01
     argocd.argoproj.io/sync-wave: "-100"
 stringData:
   AWS_ACCESS_KEY_ID: minio

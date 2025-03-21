@@ -2,6 +2,7 @@ kind: Secret
 apiVersion: v1
 metadata:
   name: minio-data-connection-01
+  namespace: parasol-insurance
   labels:
     modelmesh-enabled: 'true'
     opendatahub.io/dashboard: 'true'

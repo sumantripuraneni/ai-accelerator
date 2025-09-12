@@ -3,7 +3,7 @@ kind: OdhDashboardConfig
 metadata:
   name: odh-dashboard-config
 spec:
-  modelServerSizes:
+  notebookSizes:
     - name: Small
       resources:
         limits:
@@ -11,20 +11,36 @@ spec:
           memory: 8Gi
         requests:
           cpu: '1'
-          memory: 4Gi
+          memory: 8Gi
+    - name: Small-Medium
+      resources:
+        limits:
+          cpu: '4'
+          memory: 10Gi
+        requests:
+          cpu: '2'
+          memory: 8Gi
     - name: Medium
       resources:
         limits:
-          cpu: '8'
-          memory: 10Gi
+          cpu: '6'
+          memory: 24Gi
         requests:
-          cpu: '4'
-          memory: 8Gi
+          cpu: '3'
+          memory: 24Gi
     - name: Large
       resources:
         limits:
-          cpu: '10'
-          memory: 20Gi
+          cpu: '14'
+          memory: 56Gi
         requests:
-          cpu: '6'
-          memory: 16Gi
+          cpu: '7'
+          memory: 56Gi
+    - name: X Large
+      resources:
+        limits:
+          cpu: '30'
+          memory: 120Gi
+        requests:
+          cpu: '15'
+          memory: 120Gi
